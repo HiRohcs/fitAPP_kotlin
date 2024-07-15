@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.fitapp.ui.WelcomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.fitapp.ui.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_workoutListFragment"
+            app:destination="@id/workoutListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.fitapp.ui.SignupFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/workoutListFragment"
+        android:name="com.example.fitapp.ui.WorkoutListFragment"
+        android:label="Workout List"
+        tools:layout="@layout/fragment_workout_list">
+        <action
+            android:id="@+id/action_workoutListFragment_to_logActivityFragment"
+            app:destination="@id/logActivityFragment" />
+        <action
+            android:id="@+id/action_workoutListFragment_to_stepTrackerFragment"
+            app:destination="@id/stepTrackerFragment" />
+        <action
+            android:id="@+id/action_workoutListFragment_to_setGoalFragment"
+            app:destination="@id/setGoalFragment" />
+        <action
+            android:id="@+id/action_workoutListFragment_to_progressFragment"
+            app:destination="@id/progressFragment" />
+        <action
+            android:id="@+id/action_workoutListFragment_to_activityHistoryFragment"
+            app:destination="@id/activityHistoryFragment" />
+        <action
+            android:id="@+id/action_workoutListFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.fitapp.ui.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_workoutListFragment"
+            app:destination="@id/workoutListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/logActivityFragment"
+        android:name="com.example.fitapp.ui.LogActivityFragment"
+        android:label="Log Activity"
+        tools:layout="@layout/fragment_log_activity">
+        <action
+            android:id="@+id/action_logActivityFragment_to_workoutListFragment"
+            app:destination="@id/workoutListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/stepTrackerFragment"
+        android:name="com.example.fitapp.ui.StepTrackerFragment"
+        android:label="Step Tracker"
+        tools:layout="@layout/fragment_step_tracker">
+        <action
+            android:id="@+id/action_stepTrackerFragment_to_workoutListFragment"
+            app:destination="@id/workoutListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/setGoalFragment"
+        android:name="com.example.fitapp.ui.SetGoalFragment"
+        android:label="Set Goal"
+        tools:layout="@layout/fragment_set_goal">
+        <action
+            android:id="@+id/action_setGoalFragment_to_workoutListFragment"
+            app:destination="@id/workoutListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/progressFragment"
+        android:name="com.example.fitapp.ui.ProgressFragment"
+        android:label="Progress"
+        tools:layout="@layout/fragment_progress">
+        <action
+            android:id="@+id/action_progressFragment_to_workoutListFragment"
+            app:destination="@id/workoutListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/activityHistoryFragment"
+        android:name="com.example.fitapp.ui.ActivityHistoryFragment"
+        android:label="Activity History"
+        tools:layout="@layout/fragment_activity_history" />
+
+</navigation>

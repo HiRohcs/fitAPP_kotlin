@@ -1,0 +1,44 @@
+<!-- res/layout/fragment_set_goal.xml -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/goal_type_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Goal Type (e.g., daily steps)"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/goal_target_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Target Value (e.g., 10000)"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/goal_type_input"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/set_goal_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Goal"
+            app:layout_constraintTop_toBottomOf="@id/goal_target_input"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

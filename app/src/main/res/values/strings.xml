@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FitApp</string>
+    <string-array name="activity_types">
+        <item>All</item>
+        <item>Running</item>
+        <item>Cycling</item>
+        <item>Swimming</item>
+        <!-- Add other activity types as needed -->
+    </string-array>
+</resources>
